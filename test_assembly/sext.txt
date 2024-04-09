@@ -1,0 +1,36 @@
+## Test sext.h sext.b
+
+main:
+
+## --- 測試 sext.b
+# Case 1: rs = 0x280 (0d640), rd = 0xffffff80
+addi x28, x0, 640
+sext.b x1, x28
+
+# Case 2: rs = 0x3ff (0d1023), rd = 0xffffffff
+addi x28, x0, 1023
+sext.b x2, x28
+
+# Case 3: rs = 0x37f (0d895), rd = 0x7f
+addi x28, x0, 895
+sext.b x3, x28
+
+
+
+## --- 測試 sext.h
+# Case 1: rs = 0x281cbf68, rd = 0xffffbf68
+lui x28, 164300
+addi x28, x28, -152
+sext.h x1, x28
+
+# Case 2: rs = 0x48c010a4, rd = 0x10a4
+lui x29, 297985
+addi x29, x29, 164
+sext.h x2, x29
+
+# Case 3: rs = 0x37102012, rd = 0x2012
+lui x30, 225538
+addi x30, x30, 18
+sext.h x3, x30
+
+hcf

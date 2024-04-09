@@ -1,0 +1,11 @@
+main:
+
+addi x30,x0 ,768
+orc.b x1,x30
+# x1 應該要是 0x0000ff00
+
+addi x29,x0 ,6
+orc.b x2,x29
+# x2 應該要是 0x000000ff
+
+hcf

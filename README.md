@@ -1,6 +1,22 @@
 # Lab07 Group
 
-### 組員
+.
+├── emulator.cpp
+├── linenoise.hpp
+├── Makefile ----------------- 可根據需要自行修改
+├── README.md
+└── test_assembly ------------ 測試資料請放在這，並且副檔名為 .txt
+
+## Building and running
+
+Build using `make`
+
+Run using `./obj/emulator [assembly file path]`
+or `make run` 
+
+Clean using `make clean`
+
+## 組員
 | Name | Student ID | Role         |
 | ---- | ---------- | ------------ |
 |      |            | Project lead |
@@ -8,7 +24,7 @@
 |      |            | Member 2     |
 |      |            | Member 3     |
 
-### 指令表
+## 指令表
 
 | RV32 | RV64     | Mnemonic                  | Instruction       | Zba      | Zbb | Zbc | Zbs |Owner|
 | ---- | -------- | ------------------------- | ----------------- | -------- | --- | --- | --- |---|
