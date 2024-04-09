@@ -1,92 +1,57 @@
-# lab07-group
+# Lab07 Group
 
+### 組員
+| Name | Student ID | Role         |
+| ---- | ---------- | ------------ |
+|      |            | Project lead |
+|      |            | Member 1     |
+|      |            | Member 2     |
+|      |            | Member 3     |
 
+### 指令表
 
-## Getting started
-
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://course.playlab.tw/git/ql1115/lab07-group.git
-git branch -M main
-git push -uf origin main
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://course.playlab.tw/git/ql1115/lab07-group/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+| RV32 | RV64     | Mnemonic                  | Instruction       | Zba      | Zbb | Zbc | Zbs |Owner|
+| ---- | -------- | ------------------------- | ----------------- | -------- | --- | --- | --- |---|
+|      | &#10003; | add.uw _rd_, _rs1_, _rs2_ | [insns-add_uw](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/add_uw.adoc) | &#10003; |     |     |     |  |
+|&#10003;|&#10003;|andn _rd_, _rs1_, _rs2_|[insns-andn](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/andn.adoc)||&#10003;|| | |
+|&#10003;|&#10003;|clmul _rd_, _rs1_, _rs2_|[insns-clmul](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/clmul.adoc)|||&#10003;| | |
+|&#10003;|&#10003;|clmulh _rd_, _rs1_, _rs2_|[insns-clmulh](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/clmulh.adoc)|||&#10003;|| |
+|&#10003;|&#10003;|clmulr _rd_, _rs1_, _rs2_|[insns-clmulr](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/clmulr.adoc)|||&#10003;|| |
+|&#10003;|&#10003;|clz _rd_, _rs_|[insns-clz](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/clz.adoc)||&#10003;||
+||&#10003;|clzw _rd_, _rs_|[insns-clzw](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/clzw.adoc)||&#10003;| | | |
+|&#10003;|&#10003;|cpop _rd_, _rs_|[insns-cpop](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/cpop.adoc)||&#10003;|| | |
+||&#10003;|cpopw _rd_, _rs_|[insns-cpopw](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/cpopw.adoc)||&#10003;|| ||
+|&#10003;|&#10003;|ctz _rd_, _rs_|[insns-ctz](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/ctz.adoc)||&#10003;|| | |
+||&#10003;|ctzw _rd_, _rs_|[insns-ctzw](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/ctzw.adoc)||&#10003;||||
+|&#10003;|&#10003;|max _rd_, _rs1_, _rs2_|[insns-max](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/max.adoc)||&#10003;|| | |
+|&#10003;|&#10003;|maxu _rd_, _rs1_, _rs2_|[insns-maxu](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/maxu.adoc)||&#10003;|| | |
+|&#10003;|&#10003;|min _rd_, _rs1_, _rs2_|[insns-min](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/min.adoc)||&#10003;|| | |
+|&#10003;|&#10003;|minu _rd_, _rs1_, _rs2_|[insns-minu](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/minu.adoc)||&#10003;|| | |
+|&#10003;|&#10003;|**orc.b _rd_, _rs_**|[insns-orc_b](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/orc_b.adoc)||&#10003;|| | 江佳穎|
+|&#10003;|&#10003;|**orn _rd_, _rs1_, _rs2_**|[insns-orn](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/orn.adoc)||&#10003;|| | 江佳穎|
+|&#10003;|&#10003;|rev8 _rd_, _rs_|[insns-rev8](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/rev8.adoc)||&#10003;|| | |
+|&#10003;|&#10003;|rol _rd_, _rs1_, _rs2_|[insns-rol](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/rol.adoc)||&#10003;|| | |
+||&#10003;|rolw _rd_, _rs1_, _rs2_|[insns-rolw](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/orlw.adoc)||&#10003;|| | |
+|&#10003;|&#10003;|ror _rd_, _rs1_, _rs2_|[insns-ror](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/ror.adoc)||&#10003;|| | |
+|&#10003;|&#10003;|rori _rd_, _rs1_, _shamt_|[insns-rori](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/rori.adoc)||&#10003;|| | |
+||&#10003;|roriw _rd_, _rs1_, _shamt_|[insns-roriw](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/roriw.adoc)||&#10003;|| | |
+||&#10003;|rorw _rd_, _rs1_, _rs2_|[insns-rorw](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/rorw.adoc)||&#10003;|| | |
+|&#10003;|&#10003;|bclr _rd_, _rs1_, _rs2_|[insns-bclr](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/bclr.adoc)||||&#10003;| | |
+|&#10003;|&#10003;|bclri _rd_, _rs1_, _imm_|[insns-bclri](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/bclri.adoc)||||&#10003;| | |
+|&#10003;|&#10003;|bext _rd_, _rs1_, _rs2_|[insns-bext](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/bext.adoc)||||&#10003;| | |
+|&#10003;|&#10003;|bexti _rd_, _rs1_, _imm_|[insns-bexti](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/bexti.adoc)||||&#10003;| | |
+|&#10003;|&#10003;|binv _rd_, _rs1_, _rs2_|[insns-binv](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/binv.adoc)||||&#10003;| | |
+|&#10003;|&#10003;|binvi _rd_, _rs1_, _imm_|[insns-binvi](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/binvi.adoc)||||&#10003;| | |
+|&#10003;|&#10003;|bset _rd_, _rs1_, _rs2_|[insns-bset](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/bset.adoc)||||&#10003;| | |
+|&#10003;|&#10003;|bseti _rd_, _rs1_, _imm_|[insns-bseti](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/bseti.adoc)||||&#10003;| | |
+|&#10003;|&#10003;|**sext.b _rd_, _rs_**|[insns-sext_b](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/sext_b.adoc)||&#10003;|| | 江佳穎|
+|&#10003;|&#10003;|**sext.h _rd_, _rs_**|[insns-sext_h](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/sext_h.adoc)||&#10003;|| | 江佳穎|
+|&#10003;|&#10003;|**sh1add _rd_, _rs1_, _rs2_**|[insns-sh1add](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/sh1add.adoc)|&#10003;||| | |
+||&#10003;|sh1add.uw _rd_, _rs1_, _rs2_|[insns-sh1add_uw](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/sh1add_uw.adoc)|&#10003;||| | |
+|&#10003;|&#10003;|**sh2add _rd_, _rs1_, _rs2_**|[insns-sh2add](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/sh2add.adoc)|&#10003;||||
+||&#10003;|sh2add.uw _rd_, _rs1_, _rs2_|[insns-sh2add_uw](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/sh2add_uw.adoc)|&#10003;||| ||
+|&#10003;|&#10003;|**sh3add _rd_, _rs1_, _rs2_**|[insns-sh3add](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/sh3add.adoc)|&#10003;||| | |
+||&#10003;|sh3add.uw _rd_, _rs1_, _rs2_|[nsns-sh3add_uw](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/sh3add_uw.adoc)|&#10003;||| ||
+||&#10003;|slli.uw _rd_, _rs1_, _imm_|[insns-slli_uw](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/slli_uw.adoc)|&#10003;||| ||
+|&#10003;|&#10003;|**xnor _rd_, _rs1_, _rs2_**|[insns-xnor](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/xnor.adoc)||&#10003;|| | |
+|&#10003;|&#10003;|**zext.h _rd_, _rs_**|[insns-zext_h](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/zext_h.adoc)||&#10003;|| |
