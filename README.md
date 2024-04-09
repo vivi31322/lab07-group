@@ -1,11 +1,13 @@
 # Lab07 Group
 
+```
 .
 ├── emulator.cpp
 ├── linenoise.hpp
-├── Makefile ----------------- 可根據需要自行修改
+├── Makefile ------------ 可根據需要自行修改
 ├── README.md
-└── test_assembly ------------ 測試資料請放在這，並且副檔名為 .txt
+└── test_assembly ------- 測試資料請放在這，副檔名為 .txt
+```
 
 ## Building and running
 
