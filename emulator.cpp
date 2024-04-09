@@ -6,7 +6,7 @@
 #include <errno.h>
 
 #include "linenoise.hpp"
-
+//board2 test merge git 2024/4/9 11:24
 // 64 KB
 #define MEM_BYTES 0x10000
 #define TEXT_OFFSET 0
