@@ -22,7 +22,7 @@ Clean using `make clean`
 | Name | Student ID | Role         |
 | ---- | ---------- | ------------ |
 |      |            | Project lead |
-|      |            | Member 1     |
+|   吳明真   |            | Member 1     |
 |      |            | Member 2     |
 |      |            | Member 3     |
 
@@ -66,10 +66,10 @@ Clean using `make clean`
 |&#10003;|&#10003;|**sext.h _rd_, _rs_**|[insns-sext_h](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/sext_h.adoc)||&#10003;|| | 江佳穎|
 |&#10003;|&#10003;|**sh1add _rd_, _rs1_, _rs2_**|[insns-sh1add](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/sh1add.adoc)|&#10003;||| | |
 ||&#10003;|sh1add.uw _rd_, _rs1_, _rs2_|[insns-sh1add_uw](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/sh1add_uw.adoc)|&#10003;||| | |
-|&#10003;|&#10003;|**sh2add _rd_, _rs1_, _rs2_**|[insns-sh2add](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/sh2add.adoc)|&#10003;||||
+|&#10003;|&#10003;|**sh2add _rd_, _rs1_, _rs2_**|[insns-sh2add](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/sh2add.adoc)|&#10003;|||吳明真|
 ||&#10003;|sh2add.uw _rd_, _rs1_, _rs2_|[insns-sh2add_uw](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/sh2add_uw.adoc)|&#10003;||| ||
-|&#10003;|&#10003;|**sh3add _rd_, _rs1_, _rs2_**|[insns-sh3add](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/sh3add.adoc)|&#10003;||| | |
+|&#10003;|&#10003;|**sh3add _rd_, _rs1_, _rs2_**|[insns-sh3add](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/sh3add.adoc)|&#10003;||| |吳明真|
 ||&#10003;|sh3add.uw _rd_, _rs1_, _rs2_|[nsns-sh3add_uw](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/sh3add_uw.adoc)|&#10003;||| ||
 ||&#10003;|slli.uw _rd_, _rs1_, _imm_|[insns-slli_uw](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/slli_uw.adoc)|&#10003;||| ||
-|&#10003;|&#10003;|**xnor _rd_, _rs1_, _rs2_**|[insns-xnor](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/xnor.adoc)||&#10003;|| | |
+|&#10003;|&#10003;|**xnor _rd_, _rs1_, _rs2_**|[insns-xnor](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/xnor.adoc)||&#10003;|| |吳明真|
 |&#10003;|&#10003;|**zext.h _rd_, _rs_**|[insns-zext_h](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/zext_h.adoc)||&#10003;|| |
