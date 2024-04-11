@@ -1,0 +1,23 @@
+##請將除了測試的指令外其他的程式碼註解掉
+## RV32 Emulator Testing Assembly Code for BSET function
+
+main:
+addi x28,x0 ,16
+addi x29,x0 ,9
+bset  x30,x28,x29
+hcf
+
+# x28 = 0x10
+# x29 = 9
+# x30 = 0x210
+
+#----------------------------------------------------------------------
+## RV32 Emulator Testing Assembly Code for BSETI function
+
+main:
+addi x28,x0 ,1
+bseti  x30,x28,8
+hcf
+
+# x28 = 0x1
+# x30 = 0x101

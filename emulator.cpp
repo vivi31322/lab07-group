@@ -6,7 +6,7 @@
 #include <errno.h>
 
 #include "linenoise.hpp"
-
+//board2 test merge git 2024/4/9 11:24
 // 64 KB
 #define MEM_BYTES 0x10000
 #define TEXT_OFFSET 0
@@ -49,7 +49,7 @@ typedef enum {
 	UNIMPL = 0,
 
 	//instruction added
-    MUL,
+  MUL,
 	MULH,
 	MULHSU,
 	MULHU,
@@ -134,7 +134,7 @@ typedef enum {
 
 instr_type parse_instr(char* tok) {
 	//instruction added
-     if ( streq(tok , "mul")) return MUL;
+  if ( streq(tok , "mul")) return MUL;
 	if (streq(tok, "mulh")) return MULH;
 	if (streq(tok, "mulhsu")) return MULHSU;
 	if (streq(tok, "mulhu")) return MULHU;
@@ -864,7 +864,7 @@ void execute(uint8_t* mem, instr* imem, label_loc* labels, int label_count, bool
 		switch (i.op) {
 
 			//instruction added
-      		case MUL: rf[i.a1.reg] = rf[i.a2.reg] * rf[i.a3.reg]; break;
+      case MUL: rf[i.a1.reg] = rf[i.a2.reg] * rf[i.a3.reg]; break;
 			case MULH:rf[i.a1.reg] = (int32_t)(((int64_t)rf[i.a2.reg] * (int64_t)rf[i.a3.reg])>>32); break;
 			case MULHSU:rf[i.a1.reg] = (int32_t)(((int64_t)(int32_t)rf[i.a2.reg] * (int64_t)(uint32_t)rf[i.a3.reg])>>32); break;
 			case MULHU:rf[i.a1.reg] =( (uint64_t)rf[i.a2.reg] * (uint64_t)rf[i.a3.reg])>>32; break;
@@ -983,6 +983,15 @@ void execute(uint8_t* mem, instr* imem, label_loc* labels, int label_count, bool
 			case ORN: rf[i.a1.reg] = rf[i.a2.reg] | ~rf[i.a3.reg]; break; //  X(rd) = X(rs1) | ~X(rs2);
 			case SEXT_B: rf[i.a1.reg] = static_cast<int>((int8_t) rf[i.a2.reg]); break;  // X(rd) = EXTS(X(rs)[7..0]);
 			case SEXT_H: rf[i.a1.reg] = static_cast<int>((int16_t) rf[i.a2.reg]); break; // X(rd) = EXTS(X(rs)[15..0]);
+			case SH1ADD:
+				rf[i.a1.reg] = rf[i.a3.reg] + (rf[i.a2.reg] << 1);
+				break;
+			case SH2ADD:
+				rf[i.a1.reg] = rf[i.a3.reg] + (rf[i.a2.reg] << 2);
+				break;
+			case SH3ADD:
+				rf[i.a1.reg] = rf[i.a3.reg] + (rf[i.a2.reg] << 3);
+				break;
 			//*****************
 
 			case ADD: rf[i.a1.reg] = rf[i.a2.reg] + rf[i.a3.reg]; break;
