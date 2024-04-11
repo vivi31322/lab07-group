@@ -39,7 +39,7 @@ Clean using `make clean`
 ||&#10003;|clzw _rd_, _rs_|[insns-clzw](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/clzw.adoc)||&#10003;| | | |
 |&#10003;|&#10003;|cpop _rd_, _rs_|[insns-cpop](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/cpop.adoc)||&#10003;|| | |
 ||&#10003;|cpopw _rd_, _rs_|[insns-cpopw](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/cpopw.adoc)||&#10003;|| ||
-|&#10003;|&#10003;|ctz _rd_, _rs_|[insns-ctz](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/ctz.adoc)||&#10003;|| | |
+|&#10003;|&#10003;|ctz _rd_, _rs_|[insns-ctz](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/ctz.adoc)||&#10003;|| |吳明真 |
 ||&#10003;|ctzw _rd_, _rs_|[insns-ctzw](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/ctzw.adoc)||&#10003;||||
 |&#10003;|&#10003;|max _rd_, _rs1_, _rs2_|[insns-max](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/max.adoc)||&#10003;|| | |
 |&#10003;|&#10003;|maxu _rd_, _rs1_, _rs2_|[insns-maxu](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/maxu.adoc)||&#10003;|| | |
@@ -56,12 +56,12 @@ Clean using `make clean`
 ||&#10003;|rorw _rd_, _rs1_, _rs2_|[insns-rorw](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/rorw.adoc)||&#10003;|| | |
 |&#10003;|&#10003;|bclr _rd_, _rs1_, _rs2_|[insns-bclr](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/bclr.adoc)||||&#10003;| | |
 |&#10003;|&#10003;|bclri _rd_, _rs1_, _imm_|[insns-bclri](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/bclri.adoc)||||&#10003;| | |
-|&#10003;|&#10003;|bext _rd_, _rs1_, _rs2_|[insns-bext](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/bext.adoc)||||&#10003;| | |
-|&#10003;|&#10003;|bexti _rd_, _rs1_, _imm_|[insns-bexti](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/bexti.adoc)||||&#10003;| | |
-|&#10003;|&#10003;|binv _rd_, _rs1_, _rs2_|[insns-binv](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/binv.adoc)||||&#10003;| | |
-|&#10003;|&#10003;|binvi _rd_, _rs1_, _imm_|[insns-binvi](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/binvi.adoc)||||&#10003;| | |
-|&#10003;|&#10003;|bset _rd_, _rs1_, _rs2_|[insns-bset](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/bset.adoc)||||&#10003;| | |
-|&#10003;|&#10003;|bseti _rd_, _rs1_, _imm_|[insns-bseti](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/bseti.adoc)||||&#10003;| | |
+|&#10003;|&#10003;|bext _rd_, _rs1_, _rs2_|[insns-bext](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/bext.adoc)||||&#10003;| |吳明真 |
+|&#10003;|&#10003;|bexti _rd_, _rs1_, _imm_|[insns-bexti](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/bexti.adoc)||||&#10003;| | 吳明真|
+|&#10003;|&#10003;|binv _rd_, _rs1_, _rs2_|[insns-binv](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/binv.adoc)||||&#10003;| |吳明真 |
+|&#10003;|&#10003;|binvi _rd_, _rs1_, _imm_|[insns-binvi](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/binvi.adoc)||||&#10003;| | 吳明真|
+|&#10003;|&#10003;|bset _rd_, _rs1_, _rs2_|[insns-bset](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/bset.adoc)||||&#10003;| |吳明真 |
+|&#10003;|&#10003;|bseti _rd_, _rs1_, _imm_|[insns-bseti](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/bseti.adoc)||||&#10003;| |吳明真 |
 |&#10003;|&#10003;|**sext.b _rd_, _rs_**|[insns-sext_b](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/sext_b.adoc)||&#10003;|| | 江佳穎|
 |&#10003;|&#10003;|**sext.h _rd_, _rs_**|[insns-sext_h](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/sext_h.adoc)||&#10003;|| | 江佳穎|
 |&#10003;|&#10003;|**sh1add _rd_, _rs1_, _rs2_**|[insns-sh1add](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/sh1add.adoc)|&#10003;||| |吳明真 |
