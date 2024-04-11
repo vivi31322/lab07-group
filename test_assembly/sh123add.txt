@@ -1,0 +1,42 @@
+##請將除了測試的指令外其他的程式碼註解掉
+## Test sh1add instruction------------------------------------
+# X(rs2) + (X(rs1) << 1)
+# sh1add rd, rs1, rs2
+
+main:
+addi x28,x0,1     
+addi x29,x0,16     
+sh1add x30,x28,x29    
+hcf
+
+#x28 = rs1 = 0x1
+#x29 = rs2 = 0x10
+#x30 = 0x2+0x10 =0x12
+
+## Test sh2add instruction------------------------------------
+# X(rs2) + (X(rs1) << 2)
+# sh2add rd, rs1, rs2
+
+main:
+addi x28,x0,1     
+addi x29,x0,16     
+sh2add x30,x28,x29    
+hcf
+
+#x28 = rs1 = 0x1
+#x29 = rs2 = 0x10
+#x30 = 0x4+0x10 =0x14
+
+## Test sh3add instruction------------------------------------
+# X(rs2) + (X(rs1) << 3)
+# sh3add rd, rs1, rs2
+
+main:
+addi x28,x0,1     
+addi x29,x0,16     
+sh3add x30,x28,x29    
+hcf
+
+#x28 = rs1 = 0x1
+#x29 = rs2 = 0x10
+#x30 = 0x8+0x10 =0x18
