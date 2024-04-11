@@ -56,7 +56,7 @@ Clean using `make clean`
 ||&#10003;|rorw _rd_, _rs1_, _rs2_|[insns-rorw](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/rorw.adoc)||&#10003;|| | |
 |&#10003;|&#10003;|bclr _rd_, _rs1_, _rs2_|[insns-bclr](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/bclr.adoc)||||&#10003;| | |
 |&#10003;|&#10003;|bclri _rd_, _rs1_, _imm_|[insns-bclri](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/bclri.adoc)||||&#10003;| | |
-|&#10003;|&#10003;|bext _rd_, _rs1_, _rs2_|[insns-bext](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/bext.adoc)||||&#10003;| |吳明真 |
+|&#10003;|&#10003;|bext _rd_, _rs1_, _rs2_|[insns-bext](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/bext.adoc)||||&#10003;|吳明真 |吳明真 |
 |&#10003;|&#10003;|bexti _rd_, _rs1_, _imm_|[insns-bexti](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/bexti.adoc)||||&#10003;| | 吳明真|
 |&#10003;|&#10003;|binv _rd_, _rs1_, _rs2_|[insns-binv](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/binv.adoc)||||&#10003;| |吳明真 |
 |&#10003;|&#10003;|binvi _rd_, _rs1_, _imm_|[insns-binvi](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/binvi.adoc)||||&#10003;| | 吳明真|
