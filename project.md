@@ -1,22 +1,4 @@
-# Lab07 Group
-
-```
-.
-├── emulator.cpp
-├── linenoise.hpp
-├── Makefile ------------ 可根據需要自行修改
-├── README.md
-└── test_assembly ------- 測試資料請放在這，副檔名為 .txt
-```
-
-## Building and running
-
-Build using `make`
-
-Run using `./obj/emulator [assembly file path]`
-or `make run` 
-
-Clean using `make clean`
+# 組別 9
 
 ## 組員
 | Name | Student ID | Role         |
@@ -24,7 +6,7 @@ Clean using `make clean`
 |   江佳穎   | 311551165(nycu)  | Project lead |
 |   吳明真   |    11262611(nthu)        | Member 1     |
 |   江佳穎   | 311551165(nycu)           | Member 2     |
-|   李玄文   | 312551100(nycu) | Member 3     |
+|   李玄文   | 312551100(nycu)  | Member 3     |
 
 ## 指令表
 
@@ -73,3 +55,4 @@ Clean using `make clean`
 ||&#10003;|slli.uw _rd_, _rs1_, _imm_|[insns-slli_uw](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/slli_uw.adoc)|&#10003;||| ||
 |&#10003;|&#10003;|**xnor _rd_, _rs1_, _rs2_**|[insns-xnor](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/xnor.adoc)||&#10003;|| |李玄文|
 |&#10003;|&#10003;|**zext.h _rd_, _rs_**|[insns-zext_h](https://github.com/riscv/riscv-bitmanip/blob/main/bitmanip/insns/zext_h.adoc)||&#10003;|| |李玄文
+
