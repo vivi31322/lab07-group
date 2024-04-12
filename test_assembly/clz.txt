@@ -1,0 +1,19 @@
+## Test clz rd, rs
+main:
+
+    li x28, 2048
+    clz x1, x28
+    # x1 = 0x14
+    # 因為 2048=2^11, leading zero 個數 = 32-(11+1) = 20 = 0x14
+
+    li x29, 4096
+    clz x2, x29
+    # x2 = 0x13
+    # 因為 4096=2^12, leading zero 個數 = 32-(12+1) = 19 = 0x13
+
+    li x30, 2
+    clz x3, x30
+    # x3 = 0x1e
+    # 因為 2=2^1, leading zero 個數 = 32-(1+1) = 30 = 0x1e
+
+hcf

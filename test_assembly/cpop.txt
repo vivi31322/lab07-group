@@ -1,0 +1,18 @@
+## Test cpop rd, rs
+## counts the number of 1’s (i.e., set bits) in the source register.
+
+main:
+
+    li x28, 0xff
+    cpop x1, x28
+    # x1 = 0x8
+
+    li x29, 0xffff
+    cpop x2, x29
+    # x2 = 0x10
+
+    li x30, 4
+    cpop x3, x30
+    # x3 = 0x1
+
+hcf

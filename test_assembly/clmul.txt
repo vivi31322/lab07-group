@@ -1,0 +1,21 @@
+main:
+    # 為測試 clmulh，所以使用 large number
+    li x28,210000000
+    li x29,220000050
+
+## Test clmul rd, rs1, rs2
+    clmul x3,x28,x29
+
+## Test clmulh rd, rs1, rs2
+    clmulh x2,x28,x29
+
+## Test clmulr rd, rs1, rs2
+    clmulr x1,x28,x29
+
+hcf
+
+
+# (x2,x3) = (0x005a2d39, 0xe1f9a900)
+# x1 = 0x00b45a73
+
+
