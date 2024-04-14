@@ -1,0 +1,11 @@
+## Test zext.h rd, rs
+## zero-extends the least-significant halfword of the source to XLEN 
+## by inserting 0’s into all of the bits more significant than 15
+
+main:
+
+addi   x29, x0, -23
+zext.h x30, x29
+## -23 = 0xffff_ffe9, least-significant halfword (16bits) = 0xffe9
+## so x30 should be 0x0000_ffe9
+hcf
