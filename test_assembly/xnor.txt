@@ -1,0 +1,12 @@
+## Test xnor rd, rs1, rs2
+## bit-wise exclusive-NOR operation on rs1 and rs2
+
+main:
+
+addi x28, x0, -5
+addi x29, x0, 7
+xnor x30, x28, x29
+## x28 = -5 = 0xffff_fffb, x29 = 0x0000_0007
+## b ^ 7 = 4'b1011 ^ 4'b0111 = 4'b1100 = 0xc
+## so x30 should be ~(0xffff_fffc) = 0x0000_0003
+hcf

@@ -931,11 +931,10 @@ void execute(uint8_t* mem, instr* imem, label_loc* labels, int label_count, bool
 				rf[i.a1.reg] = rf[i.a2.reg] < rf[i.a3.reg] ? rf[i.a2.reg] : rf[i.a3.reg];
 				break;
 			case REV8:
+			// 已訂正
 				rf[i.a1.reg]=0;
 				for(int k=0;k<=24;k+=8){
-					for(int j=0;j<8;j++){
-						rf[i.a1.reg]+=((rf[i.a2.reg]>>(k+j))&(uint32_t)1)<<(k+7-j);	
-					}
+					rf[i.a1.reg]+=((rf[i.a2.reg]>>k/*(k+j)*/)&(uint32_t)255)<<(24-k);		
 				}
 				break;
 			case ROR:

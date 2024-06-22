@@ -1,0 +1,20 @@
+## Test min rd, rs1, rs2
+
+main:
+
+addi x22, x0, 12
+addi x23, x0, 64
+min x24, x22, x23
+## x24 should be 12 = 0x0000_000c
+
+addi x25, x0, -12
+addi x26, x0, 64
+min x27, x25, x26
+## x27 should be -12 = 0xffff_fff4
+
+addi x28, x0, 12
+addi x29, x0, -64
+min x30, x28, x29
+## x30 should be -64 = 0xffff_ffc0
+
+hcf
